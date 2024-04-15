@@ -1,0 +1,47 @@
+---
+const skills = [
+  {
+    title: "Full-stack",
+    technologies: [
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Astro",
+      "React",
+      "Angular",
+      "Tailwind CSS",
+      "C#",
+      ".NET",
+      "MongoDB",
+    ],
+  },
+  {
+    title: "Mobile",
+    technologies: ["Swift", "Objective-C", "Kotlin", "Java", "Ionic", "Capacitor", "Firebase"],
+  },
+  {
+    title: "AI",
+    technologies: ["Python", "TensorFlow", "OpenCV", "Jupyter"],
+  },
+  {
+    title: "Cloud",
+    technologies: ["AWS", "Azure", "Docker", "Kubernetes"],
+  },
+  {
+    title: "Data analytics",
+    technologies: ["Java", "Kafka", "Spark", "HDFS"],
+  },
+];
+---
+
+<h2 class="font-semibold uppercase text-slate-600 mt-8 mb-4">Recently used technologies</h2>
+<ol class="leading-relaxed text-slate-600 mb-4">
+  {
+    skills.map((skill) => (
+      <li class="mb-2">
+        <h3 class="font-semibold text-slate-400">{skill.title}</h3>
+        <p>{skill.technologies.join(", ")}</p>
+      </li>
+    ))
+  }
+</ol>

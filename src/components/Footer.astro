@@ -1,0 +1,22 @@
+<img src="/mandorla-300x300.png" class="border-none max-w-[75px]" />
+<div class="ml-8 font-light text-slate-400 text-left">
+  <h2 class="font-semibold uppercase">Mandorla Oy</h2>
+  <p id="a1"></p>
+  <p id="a2"></p>
+</div>
+
+<script>
+  const a1e = "S3hheHJqYXh4a3V4amF4IDExeA==";
+  const a1d = atob(a1e).replaceAll("x", "");
+  const a2e = "VHV4eHJ4a3V4LHggRnh4aW5seGFueGQ=";
+  const a2d = atob(a2e).replaceAll("x", "");
+
+  const e = document.getElementById("a1");
+  if (e) {
+    e.innerHTML = a1d;
+  }
+  const p = document.getElementById("a2");
+  if (p) {
+    p.innerHTML = a2d;
+  }
+</script>

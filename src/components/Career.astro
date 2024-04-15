@@ -1,0 +1,54 @@
+---
+// Note: en dash used in year ranges (not hyphen)
+const careerSummary = [
+  {
+    company: "Mandorla Oy",
+    periodStart: "Oct 2016",
+    periodStop: "Present",
+    roles: ["Software Consultant and Entrepreneur"],
+  },
+  {
+    company: "Teleste Oyj",
+    periodStart: "May 1996",
+    periodStop: "Feb 2024",
+    roles: ["Director, New Applications", "R&D Manager"],
+  },
+  {
+    company: "Space Systems Finland",
+    periodStart: "Aug 1992",
+    periodStop: "Apr 1996",
+    roles: ["Senior Software Engineer"],
+  },
+  {
+    company: "Finnish Meteorological Institute",
+    periodStart: "Jun 1991",
+    periodStop: "Jul 1992",
+    roles: ["Software Engineer"],
+  },
+  {
+    company: "Helsinki University of Technology",
+    periodStart: "Aug 1987",
+    periodStop: "May 1994",
+    roles: ["Master of Science (El. Eng.)"],
+  },
+];
+---
+
+<h2 class="font-semibold uppercase text-slate-600 mt-8 mb-4">Career summary</h2>
+<ol class="mb-6">
+  {
+    careerSummary.map((data) => (
+      <li class="mb-2">
+        <div class="justify-center text-slate-400">
+          <h3 class="font-semibold">{data.company}</h3>
+          <p class="text-sm">
+            {data.periodStart} – {data.periodStop}
+          </p>
+        </div>
+        {data.roles.map((role) => (
+          <p class="text-slate-600">{role}</p>
+        ))}
+      </li>
+    ))
+  }
+</ol>

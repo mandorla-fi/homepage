@@ -1,0 +1,27 @@
+<ol class="flex flex-row justify-center gap-x-4 text-xs mt-4 m-2 text-slate-400 font-bold">
+  <li class="basis-2/6 text-end hover:text-sky-600"><a id="e" href="#"></a></li>
+  <li class="basis-2/6 text-center hover:text-sky-600">
+    <a href="https://www.linkedin.com/in/tommi-ketola-sw" rel="noopener noreferrer">LinkedIn</a>
+  </li>
+  <li class="basis-2/6 text-start hover:text-sky-600"><a id="p" href="#"></a></li>
+</ol>
+
+<script>
+  const ee = "dG94eG1teGlAbXhheHhuZHhvcmx4YS5meGk=";
+  const ed = atob(ee).replaceAll("x", "");
+  const me = "KzN4NTggNHgweHggNXgxeDQgMjQzeHgz";
+  const md = atob(me).replaceAll("x", "");
+
+  const e = document.getElementById("e");
+  if (e) {
+    e.innerHTML = ed;
+    e.setAttribute("href", "mailto:" + ed);
+    e.setAttribute("rel", "noopener noreferrer");
+  }
+  const p = document.getElementById("p");
+  if (p) {
+    p.innerHTML = md;
+    p.setAttribute("href", "tel:" + md.replaceAll(" ", ""));
+    p.setAttribute("rel", "noopener noreferrer");
+  }
+</script>
