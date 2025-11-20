@@ -5,7 +5,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^5.14.8",
+    "astro": "^5.15.9",
     "autoprefixer": "^10.4.21",
     "tailwindcss": "^4.1.15"
   },
